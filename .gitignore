@@ -1,0 +1,36 @@
+# Gradle
+.gradle/
+build/
+!gradle-wrapper.jar
+
+# Local configuration
+local.properties
+
+# IntelliJ / Android Studio
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Logs / temp
+*.log
+*.tmp
+
+# Keystore files
+*.jks
+*.keystore
+
+# macOS / Windows system files
+.DS_Store
+Thumbs.db
+
+# Android captures
+captures/
+
+# NDK / CMake
+.externalNativeBuild/
+.cxx/
+
+# Generated files
+out/
+
