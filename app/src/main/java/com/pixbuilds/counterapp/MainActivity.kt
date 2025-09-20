@@ -10,8 +10,8 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Shapes
 import androidx.compose.material3.Text
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.remember
@@ -32,6 +32,9 @@ class MainActivity : ComponentActivity() {
                         Text("${counter.intValue}")
                         Button( onClick = { counter.intValue += 1 }, shape = RoundedCornerShape(10.dp) ) {
                             Text("click me")
+                        }
+                        OutlinedButton ( onClick = { counter.intValue = 0 } , shape = RoundedCornerShape(10.dp) ) {
+                            Text("Reset Counter")
                         }
                     }
                 }
